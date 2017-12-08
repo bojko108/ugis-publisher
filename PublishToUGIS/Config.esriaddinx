@@ -1,0 +1,25 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>PublishToUGIS</Name>
+  <AddInID>{56a046d6-ba03-49a0-8c2a-c4dbf6222ebf}</AddInID>
+  <Description>Tool for generating config file for uGIS from an ESRI REST service.</Description>
+  <Version>1.0</Version>
+  <Image>Images\PublishToUGIS.png</Image>
+  <Author>bojko108</Author>
+  <Company>BojkoSoft</Company>
+  <Date>07-Dec-17</Date>
+  <Targets>
+    <Target name="Desktop" version="10.2" />
+  </Targets>
+  <AddIn language="CLR" library="PublishToUGIS.dll" namespace="PublishToUGIS">
+    <ArcCatalog>
+      <Commands>
+        <Button id="BojkoSoft_PublishToUGIS_ButtonPublish_ArcCatalog" class="ButtonPublish" message="Generate config for uGIS" caption="Publish to uGIS" tip="Publish service to uGIS" category="uGIS Tools" image="Images\ButtonPublish.png" />
+      </Commands>
+    </ArcCatalog>
+    <ArcMap>
+      <Commands>
+        <Button id="BojkoSoft_PublishToUGIS_ButtonPublish_ArcMap" class="ButtonPublish" message="Generate config for uGIS" caption="Publish to uGIS" tip="Publish service to uGIS" category="uGIS Tools" image="Images\ButtonPublish.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
